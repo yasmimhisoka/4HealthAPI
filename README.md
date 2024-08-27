@@ -1,7 +1,6 @@
 # 4Health2.0
 
-refazendo com uma nova arquitetura e regras de negócios
-4Health2.0 é a nova versão do software, separado o funcionamento em uma api, seu objetivo é registar consultas médicas geral ou especifica e vacinação, facilitando para a população realizar a manutenção da sua saúde
+O objetivo desse software é registar consultas médicas geral, especificas e vacinação, facilitando para a população realizar a manutenção da sua saúde.
 
 ## Como Usar
 
