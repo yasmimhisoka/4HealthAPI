@@ -1,6 +1,6 @@
 # 4Health2.0
 
-O objetivo desse software é registar consultas médicas geral, especificas e vacinação, facilitando para a população realizar a manutenção da sua saúde.
+O objetivo desse software é registrar consultas médicas geral, especificas e vacinação, facilitando para a população realizar a manutenção da sua saúde.
 
 ## Como Usar
 
