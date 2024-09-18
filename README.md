@@ -4,17 +4,23 @@ O objetivo desse software é registrar consultas médicas geral, especificas e v
 
 ## Como Usar
 
-Autenticação deve ser feita com um aquivo json contendo o acesso com o usuario e a senha **tambem pode ser o administrador**.
-O contéudo caso seja cadastro ou atualizar, deve conter todos os dados abaixo:
+Autenticação e Cadastro de Usuário
+
+A autenticação deve ser realizada utilizando um arquivo JSON que contenha as credenciais de acesso, incluindo usuário e senha. É importante ressaltar que o acesso pode ser realizado por usuários comuns ou por um administrador.
+
+Para operações de cadastro ou atualização de dados, o conteúdo do arquivo JSON deve incluir todas as informações obrigatórias listadas abaixo:
 
 - Paciente
-> cpf, rg, nome, nascimento, sexo, senha, situacao, problema, pcd e alergia
+> CPF, RG, Nome, Nascimento, Sexo, Senha, Situação, Problema, PCD e Alergia
+
 - Médico
-> cpf, rg, nome, nascimento, email, sexo, senha, situacao, crm, especialidade e horario
+> CPF, RG, Nome, Nascimento, Sexo, Email, Senha, Situação, CRM, Especialidade e Horário
+
 - Medicamento
-> tipo, nome, finalidade, medida, dosagem, aplicacao, quantidade e situacao
+> Tipo, Nome, Finalidade, Medida, Dosagem, Aplicação, Quantidade e Situação
+
 - Consulta
-> tipo, finalidade, id_paciente, id_medico, data_marcada, data_registrada, detalhes, id_medicamento, situacao
+> Tipo, Finalidade, Situação, Detalhes, id_paciente, id_medico, data_marcada, data_registrada, id_medicamento
 
 ## Endpoint e Rotas
 
@@ -73,7 +79,7 @@ essa requisição reativa um médico específico
 
 ## Exemplos Práticos
 
-Exemplo de requisições correta:
+Exemplo de requisições corretas:
 - POST	{local}/consulta/inserir/
 ~~~javascript
 {
@@ -147,10 +153,10 @@ Exemplo de requisições correta:
 
 ## Gestão de Erros
 
->Ainda sem um bom tratamento de erro verdadeiro
+> Ainda sem um bom tratamento de erro verdadeiro
 
-a api verifica se o paciente possui o cpf, rg, nome e senha vazios.
-a api verifica se o médico possui o cpf, rg, nome, senha, crm e especialidade vazios.
+A API verifica se o paciente possui o CPF, RG, Nome e Senha vazios.
+A API verifica se o médico possui o CPF, RG, Nome, Senha, CRM e Especialidade vazios.
 
 ## Exemplos de Respostas
 
