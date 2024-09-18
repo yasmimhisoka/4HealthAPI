@@ -1,4 +1,4 @@
-# 4Health2.0
+# 4Health API
 
 O objetivo desse software é registrar consultas médicas geral, especificas e vacinação, facilitando para a população realizar a manutenção da sua saúde.
 
